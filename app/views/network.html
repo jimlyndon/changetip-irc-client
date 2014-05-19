@@ -1,0 +1,12 @@
+<section class="content">
+  <h1>ChangeTip IRC</h1>
+  <div>
+    <h2>{{ network.host }}</h2>
+    <div>Connected as: {{ network.currentnick }}</div>
+    <ul>
+      <li ng-repeat="channel in network.channels">
+        {{ channel.name }}
+      </li>
+    </ul>
+  </div>
+</section>
