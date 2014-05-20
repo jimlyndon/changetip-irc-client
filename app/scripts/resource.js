@@ -30,7 +30,6 @@
     var params = [this._path];
     params.push.apply(params, Array.prototype.slice.call(arguments));
     return format.apply(null, params);
-    // return uid ? this._path + '/' + uid : this._path;
   };
 
   function format(f) {
