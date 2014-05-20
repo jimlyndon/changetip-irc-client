@@ -12,9 +12,6 @@ lowdash.factory('_', function() {
 // });
 
 angular.module('botClient', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
   'ngRoute',
   'lowdash'
 ])
