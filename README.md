@@ -15,13 +15,13 @@ TODO: If there's no data then the root network has reconnected. Currently the ID
 
 * Install [Node and the Node package manager (NPM)](http://http://nodejs.org/)
 
-* Install Bower (client side package manager) using NPM
+* Install Bower (client side package manager) using NPM:
 
     ```sh
     $ npm install -g bower
     ```
 
-* Install Grunt (task runner) using NPM
+* Install Grunt (task runner) using NPM:
 
     ```sh
     $ npm install -g grunt-cli
@@ -35,7 +35,7 @@ TODO: If there's no data then the root network has reconnected. Currently the ID
     $ bower install
     ```
 
-* Start server with Grunt
+* Start server with Grunt:
 
     ```sh
     $ grunt serve
