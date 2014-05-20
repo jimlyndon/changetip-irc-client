@@ -41,6 +41,10 @@ TODO: If there's no data then the root network has reconnected. Currently the ID
     $ grunt serve
     ```
 
+## Deploy to Heroku
+
+* TODO: instructions for this
+
 ## History
 
 For detailed changelog, check [Releases](https://github.com/jimlyndon/changetip-irc-client/releases).
