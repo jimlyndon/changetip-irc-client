@@ -30,7 +30,7 @@ TODO: If there's no data then the root network has reconnected. Currently the ID
 * Install dependencies in working directory:
 
     ```sh
-    $ cd changetip-irc
+    $ cd changetip-irc-client
     $ [sudo] npm install
     $ bower install
     ```
