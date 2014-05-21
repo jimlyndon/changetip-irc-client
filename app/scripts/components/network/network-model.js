@@ -29,11 +29,10 @@ Network.$factory = [
 angular.module('botClient').factory('ircNetwork', Network.$factory);
 
 Network.$find = function() {
-  var args = Array.prototype.slice.call(arguments);
-  var futureNetworkData = this.$$resource.find.apply(this.$$resource, args);
+  var futureNetworkData = this.$$resource.find.apply(this.$$resource, arguments);
 
   // single network
-  if (args.length) return new Network(futureNetworkData);
+  if (arguments.length) return new Network(futureNetworkData);
 
   // all networks
   return Network.$getCollection(futureNetworkData);

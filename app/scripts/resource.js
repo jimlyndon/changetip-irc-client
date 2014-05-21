@@ -16,10 +16,9 @@
   angular.module('botClient').factory('ircResource', Resource.$factory);
 
   Resource.prototype.find = function() {
-    var args = Array.prototype.slice.call(arguments);
     var deferred = Q.defer();
 
-    this._http.get(this.path.apply(this, args))
+    this._http.get(this.path.apply(this, arguments))
       .success(deferred.resolve)
       .error(deferred.reject);
 
@@ -28,8 +27,8 @@
 
   Resource.prototype.path = function() {
     var params = [this._path];
-    params.push.apply(params, Array.prototype.slice.call(arguments));
-    return format.apply(null, params);
+    params.push.apply(params, arguments);
+    return format.apply(this, params);
   };
 
   function format(f) {

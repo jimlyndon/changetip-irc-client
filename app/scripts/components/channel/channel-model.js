@@ -27,11 +27,10 @@ Channel.$factory = [
 angular.module('botClient').factory('ircChannel', Channel.$factory);
 
 Channel.$find = function() {
-  var args = Array.prototype.slice.call(arguments);
-  var futureChannelData = this.$$resource.find.apply(this.$$resource, args);
+  var futureChannelData = this.$$resource.find.apply(this.$$resource, arguments);
 
   // single channel, nid and cid
-  if (args.length > 1) return new Channel(futureChannelData);
+  if (arguments.length > 1) return new Channel(futureChannelData);
 
   // all channels, nid only
   return Channel.$unwrapCollection(futureChannelData);
